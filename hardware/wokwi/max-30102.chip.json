@@ -1,0 +1,11 @@
+{
+  "name": "max-30102",
+  "author": "PigmentCal-UQ",
+  "pins": [
+    "VCC",
+    "GND",
+    "SDA",
+    "SCL"
+  ],
+  "controls": []
+}

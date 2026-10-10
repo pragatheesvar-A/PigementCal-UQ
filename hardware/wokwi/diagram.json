@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": -96, "left": 427.24, "attrs": {} },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": -58.2,
+      "left": 137.4,
+      "rotate": 90,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -129.6,
+      "left": 105.05,
+      "rotate": 90,
+      "attrs": { "value": "1000" }
+    },
+    { "type": "chip-max-30102", "id": "chip1", "top": -171.78, "left": 504, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "esp:3V3", "btn1:1.l", "red", [ "h4.99", "v-48", "h-38.4" ] ],
+    [ "esp:EN", "r1:1", "black", [ "h-14.21", "v-105.6", "h-38.4" ] ],
+    [ "esp:VP", "btn1:2.r", "gold", [ "h-14.21", "v38.4", "h-38.4", "v9.6" ] ],
+    [ "r1:2", "btn1:2.l", "black", [ "h0", "v18" ] ],
+    [ "esp:22", "chip1:SCL", "orange", [ "h105.6", "v-115.2" ] ],
+    [ "chip1:SDA", "esp:21", "gold", [ "v0" ] ],
+    [ "chip1:GND", "esp:GND.2", "black", [ "h0" ] ],
+    [ "chip1:VCC", "esp:3V3", "red", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}

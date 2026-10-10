@@ -1,0 +1,49 @@
+{
+ "groups_by_valid_so2_rows": {
+  "1": 5255,
+  "2": 12051,
+  "3": 293,
+  "4": 242,
+  "6": 1
+ },
+ "two_row_groups": {
+  "n": 12051,
+  "max_abs_diff": 1.0,
+  "share_diff<=0.5": 0.9999,
+  "share_diff==0": 0.1233
+ },
+ "three_row_groups": {
+  "n": 293,
+  "first_two_rows_differ_by_more_than_0.5 (a 3rd run would be triggered)": 0.403,
+  "at_least_one_pair_within_0.5": 1.0,
+  "median_range": 0.6
+ },
+ "groups_with_4plus_valid_rows": {
+  "n": 243,
+  "median_time_span_min": 2.0,
+  "median_so2_range": 0.2,
+  "so2_range_gt_1.5": 0
+ },
+ "single_row_groups": {
+  "n": 5255,
+  "share_with_so2<=75": 0.195,
+  "vs_two_row_share": 0.181
+ },
+ "two_row_time_gap_s": {
+  "min": 0.0,
+  "p50": 60.0,
+  "p90": 240.0,
+  "negative_or_zero_share": 0.249
+ },
+ "palmar_deltaE": {
+  "encounters_assessable": 705,
+  "max_deltaE_gt_15": 6,
+  "median": 1.08,
+  "p90": 3.94,
+  "max": 20.4
+ },
+ "palmar_zero_reflectance_rows": {
+  "all_zero_or_missing_reflectance": 72,
+  "of_which_Lab_present": 12
+ }
+}

@@ -1,0 +1,15 @@
+# Pinned versions the audit baseline and the synthetic dataset hash were produced with (Python 3.13.15, Windows 11).
+# Install: pip install -r requirements.lock   (requirements.txt keeps the looser ranges)
+# python-multipart is NOT needed: upload routes read the raw request body, not UploadFile/Form.
+fastapi==0.142.2
+httpx==0.28.1
+joblib==1.6.0
+lightgbm==4.7.0
+numpy==2.5.3
+pandas==3.0.6
+pydantic==2.13.5
+pytest==9.1.1
+scikit-learn==1.9.1
+scipy==1.18.1
+starlette==1.7.0
+uvicorn==0.54.0

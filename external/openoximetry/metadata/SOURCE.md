@@ -1,0 +1,1 @@
+﻿EXTERNAL data: PhysioNet openox-repo 1.1.1 (credentialed; PhysioNet Restricted Health Data License 1.5.0). Downloaded by the project owner. data_source = EXTERNAL_OPENOXIMETRY. Do not redistribute. Not mixed with own project data.

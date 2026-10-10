@@ -1,0 +1,323 @@
+{
+ "P1": {
+  "rows": 32877,
+  "groups": 18685,
+  "size_distribution": {
+   "1": 5568,
+   "2": 12558,
+   "3": 302,
+   "4": 256,
+   "6": 1
+  },
+  "type_values": {
+   "1": 32877
+  },
+  "exact_duplicate_rows": 526,
+  "so2_missing": 1410,
+  "two_row_groups": {
+   "n": 12558,
+   "time_gap_s_quantiles(0,25,50,75,90,100)": [
+    0.0,
+    60.0,
+    60.0,
+    180.0,
+    240.0,
+    3560803380.0
+   ],
+   "same_clock_minute_share": 0.248,
+   "abs_so2_diff_quantiles(0,50,90,100)": [
+    0.0,
+    0.2,
+    0.4,
+    0.5
+   ],
+   "identical_so2_share": 0.118,
+   "share_of_groups_where_column_differs": {
+    "ph": 0.862,
+    "pco2": 0.892,
+    "po2": 0.926,
+    "cohb": 0.744,
+    "methb": 0.819,
+    "thb": 0.728,
+    "ETCO2": 0.0,
+    "ScalcO2": 0.0
+   }
+  },
+  "rows_per_distinct_sample_per_encounter_median": 2.0,
+  "pulseox_rows_per_(encounter,device,probe_location,sample)": {
+   "1": 89214,
+   "3": 5,
+   "7": 25
+  },
+  "samples_in_pulseox_not_in_bloodgas_for_same_encounter": 610
+ },
+ "P2": {
+  "conflicting_encounters(any row id != encounter.csv)": 18,
+  "bloodgas_rows_affected": 9,
+  "spectro_rows_affected": 261,
+  "encounters_in_both_tables": 0,
+  "date_evidence": {
+   "enc_in_encounter_patient_year_range": 16,
+   "enc_not_in_that_range": 0,
+   "not_assessable": 2,
+   "enc_in_alt_patient_year_range": 0,
+   "not_in_alt_range": 15,
+   "alt_not_assessable": 3
+  },
+  "encounter_csv_ids_missing_from_patient_csv": 0,
+  "bloodgas_ids_not_in_patient_csv": 4,
+  "spectro_ids_not_in_patient_csv": 4,
+  "rows_with_missing_patient_id": {
+   "bloodgas": 0,
+   "spectro": 0
+  }
+ },
+ "P3": [
+  {
+   "device": 55,
+   "rows_all_forms": 3672,
+   "PI_rows": 631,
+   "PI_missing_pct": 82.8,
+   "min": 0.25,
+   "p25": 1.5,
+   "median": 2.8,
+   "p75": 5.4,
+   "max": 17.0,
+   "distinct_values": 141,
+   "integer_valued_share": 0.17,
+   "in_devices_csv": true,
+   "device_type": 1
+  },
+  {
+   "device": 60,
+   "rows_all_forms": 16162,
+   "PI_rows": 16162,
+   "PI_missing_pct": 0.0,
+   "min": 0.06,
+   "p25": 0.7,
+   "median": 1.8,
+   "p75": 4.4,
+   "max": 18.0,
+   "distinct_values": 193,
+   "integer_valued_share": 0.1,
+   "in_devices_csv": true,
+   "device_type": 3
+  },
+  {
+   "device": 73,
+   "rows_all_forms": 4020,
+   "PI_rows": 4020,
+   "PI_missing_pct": 0.0,
+   "min": 0.06,
+   "p25": 1.3,
+   "median": 2.7,
+   "p75": 4.7,
+   "max": 15.0,
+   "distinct_values": 190,
+   "integer_valued_share": 0.1,
+   "in_devices_csv": true,
+   "device_type": 3
+  },
+  {
+   "device": 76,
+   "rows_all_forms": 575,
+   "PI_rows": 575,
+   "PI_missing_pct": 0.0,
+   "min": 2.0,
+   "p25": 6.0,
+   "median": 8.0,
+   "p75": 10.0,
+   "max": 37.0,
+   "distinct_values": 33,
+   "integer_valued_share": 1.0,
+   "in_devices_csv": true,
+   "device_type": 3
+  },
+  {
+   "device": 59,
+   "rows_all_forms": 17010,
+   "PI_rows": 17010,
+   "PI_missing_pct": 0.0,
+   "min": 1.0,
+   "p25": 10.0,
+   "median": 25.0,
+   "p75": 51.0,
+   "max": 255.0,
+   "distinct_values": 174,
+   "integer_valued_share": 1.0,
+   "in_devices_csv": true,
+   "device_type": 3
+  },
+  {
+   "device": 64,
+   "rows_all_forms": 3339,
+   "PI_rows": 3183,
+   "PI_missing_pct": 4.7,
+   "min": 4.0,
+   "p25": 72.0,
+   "median": 177.0,
+   "p75": 329.0,
+   "max": 1717.0,
+   "distinct_values": 736,
+   "integer_valued_share": 1.0,
+   "in_devices_csv": true,
+   "device_type": 3
+  }
+ ],
+ "P4": [
+  {
+   "device_string": "55",
+   "rows": 631,
+   "encounters": 30,
+   "rows_with_PI": 631,
+   "probe_location_values": {
+    "NaN": 631
+   },
+   "encounters_assigning_exact_string_in_encounter_csv": 0
+  },
+  {
+   "device_string": "55.0",
+   "rows": 203,
+   "encounters": 8,
+   "rows_with_PI": 0,
+   "probe_location_values": {
+    "5.0": 77,
+    "10.0": 76,
+    "3.0": 25,
+    "2.0": 25
+   },
+   "encounters_assigning_exact_string_in_encounter_csv": 0
+  },
+  {
+   "device_string": "55.01",
+   "rows": 1210,
+   "encounters": 51,
+   "rows_with_PI": 0,
+   "probe_location_values": {
+    "10.0": 242,
+    "9.0": 169,
+    "8.0": 161,
+    "5.0": 157
+   },
+   "encounters_assigning_exact_string_in_encounter_csv": 44
+  },
+  {
+   "device_string": "36",
+   "rows": 50,
+   "encounters": 2,
+   "rows_with_PI": 0,
+   "probe_location_values": {
+    "8.0": 25,
+    "10.0": 25
+   },
+   "encounters_assigning_exact_string_in_encounter_csv": 0
+  },
+  {
+   "device_string": "36.0",
+   "rows": 77,
+   "encounters": 3,
+   "rows_with_PI": 0,
+   "probe_location_values": {
+    "1.0": 27,
+    "5.0": 25,
+    "4.0": 25
+   },
+   "encounters_assigning_exact_string_in_encounter_csv": 0
+  },
+  {
+   "device_string": "36.01",
+   "rows": 1077,
+   "encounters": 45,
+   "rows_with_PI": 0,
+   "probe_location_values": {
+    "4.0": 217,
+    "1.0": 199,
+    "10.0": 199,
+    "5.0": 172
+   },
+   "encounters_assigning_exact_string_in_encounter_csv": 38
+  },
+  {
+   "device_string": "56 .01 (contains a space)",
+   "rows": 25,
+   "encounters": 1,
+   "rows_with_PI": 0,
+   "probe_location_values": {
+    "2.0": 25
+   },
+   "distinct_raw_strings": [
+    "56 .01"
+   ]
+  }
+ ],
+ "P5": {
+  "palmar_rows": 2382,
+  "L_eq_0": 0,
+  "L_missing": 60,
+  "a_missing": 60,
+  "b_missing": 60,
+  "L_outside_0_100": 0,
+  "a_or_b_abs_gt_128": 0,
+  "rows_with_any_flag": 60,
+  "valid_rows": 2322,
+  "ITA_valid_min_max": [
+   -59.8,
+   52.8
+  ],
+  "L_min_max_valid": [
+   32.7,
+   69.9
+  ],
+  "b_min_max_valid": [
+   10.07,
+   25.82
+  ],
+  "b_lt_or_eq_0_valid_rows": 0,
+  "encounters_with_palmar_rows": 725,
+  "encounters_with_all_rows_valid": 705,
+  "encounters_with_some_invalid": 20,
+  "encounters_with_no_valid": 20,
+  "readings_per_encounter": {
+   "3": 677,
+   "6": 46,
+   "9": 2
+  },
+  "ITA_spread_within_encounter_quantiles(50,90,99,100)": [
+   1.09,
+   5.25,
+   21.94,
+   72.34
+  ],
+  "encounters_with_spread_gt_10_deg": 23,
+  "encounters_with_palmar_readings_on_more_than_one_date": 11
+ },
+ "P6_counts": {
+  "pulseox_rows_with_valid_spo2_and_sample": 89125,
+  "no_bloodgas_for_sample": 5904,
+  "n_bg==1": 23775,
+  "n_bg==2": 57473,
+  "n_bg>=3": 1973,
+  "in_conflicting_encounters": 1625,
+  "n_bg==1_and_non_conflicting": 22911,
+  "... and palmar rows all valid (encounter)": 20313,
+  "... encounters": 213,
+  "... participants (encounter.csv)": 102,
+  "... of which rows with a PI value (any device, units unresolved)": 7826,
+  "... by device (top 8)": {
+   "59.0": 3487,
+   "60.0": 3013,
+   "55.0": 997,
+   "64.0": 936,
+   "36.0": 791,
+   "44.0": 779,
+   "41.0": 757,
+   "39.0": 740
+  },
+  "share_of_non_conflicting_paired_rows_that_are_1:1": 0.28,
+  "sample_number_median_1:1 vs multi": [
+   13.0,
+   13.0
+  ],
+  "participants_overall_with_any_valid_pair": 214
+ }
+}

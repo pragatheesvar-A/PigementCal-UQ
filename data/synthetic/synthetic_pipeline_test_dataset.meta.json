@@ -1,0 +1,29 @@
+{
+  "dataset_type": "synthetic",
+  "research_validity": "not_for_research_validation",
+  "generated_for": "pipeline_integration_testing",
+  "label": "SOFTWARE / PIPELINE TEST DATA — NOT RESEARCH RESULTS",
+  "seed": 20260101,
+  "generator": "generate_synthetic_pipeline_data.py",
+  "file": "synthetic_pipeline_test_dataset.csv",
+  "participants": 180,
+  "rows": 1440,
+  "csv_sha256": "dfe784d85bbdb4609e2d6c717e11f78568cb8ce7e91f36e8773997ca4448eb52",
+  "versions": {
+    "python": "3.13.15",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6"
+  },
+  "itagroups_participants": {
+    "Light": 70,
+    "Medium": 70,
+    "Dark": 40
+  },
+  "ita_group_note": "Group names are only labels for the project's configured ITA bands (Light: ITA > 41, Dark: ITA <= 10, Medium otherwise). They are NOT the standard ITA skin-tone categories and 'Dark' does not mean the darkest skin.",
+  "limitations": [
+    "CIRCULAR: the SaO2 bias is invented to grow with lower ITA and lower PI, so any model that 'finds' it only recovers the rule written in this file.",
+    "SpO2 is drawn from about 82-100 %: the hypoxemic range (below ~80 %) is not represented.",
+    "device_id (SYNTHETIC_DEVICE_A/B) has NO effect on the generative rule: device generalisation cannot be tested with this data.",
+    "Not human data. Does not demonstrate real pulse-oximeter bias. Never use as research evidence."
+  ]
+}

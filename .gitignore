@@ -1,0 +1,29 @@
+# environments and build output
+backend/.venv/
+frontend/node_modules/
+frontend/dist/
+__pycache__/
+.pytest_cache/
+.pytest_tmp/
+
+# data, models and results never go into version control
+backend/data/
+backend/models/
+backend/results/
+# external datasets: NEVER commit raw or processed data (credentialed / restricted-access licence). Audit evidence stays tracked.
+external/**/raw/
+external/**/processed/*
+external/**/metadata/official_docs/
+external/**/reports/*.csv
+external/**/reports/import_audit.json
+*.joblib
+
+# editor / OS
+.vscode/
+.DS_Store
+Thumbs.db
+
+data/synthetic/sandbox/
+
+# contains short record-identifier fragments from a credentialed dataset: redact before publishing
+external/**/reports/final_data_resolution.md
